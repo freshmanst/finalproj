@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+<nav class="navbar">
+  <div class="navbar-container">
+    <a href="mainPage.html" class="nav-logo">ClothingReviews</a>
+    <div class="nav-links">
+      <a href="mainPage.html" class="nav-item">Home</a>
+      <a href="account.html" class="nav-item">Account</a>
+      <a href="login.html" class="nav-item">Login</a>
+    </div>
+  </div>
+</nav>
+
+<div class="login-modal">
+  <h2>Welcome Back</h2>
+  <div class="social-login">
+    <button class="btn-social-login btn-facebook">Continue with Facebook</button>
+    <button class="btn-social-login btn-google">Continue with Google</button>
+  </div>
+  <div class="divider">
+    <hr class="line" />
+    <span class="or">OR</span>
+    <hr class="line" />
+  </div>
+  <form action="/login" method="post">
+    <div class="input-group">
+      <label for="username">Username or Email Address</label>
+      <input type="text" id="username" placeholder="Username or Email" required>
+    </div>
+    <div class="input-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Password" required>
+    </div>
+    <div class="form-footer">
+      <a href="#" class="forgot-password">Forgot password?</a>
+      <input type="submit" value="Sign In" class="btn">
+    </div>
+  </form>
+</div>
+</body>
+</html>

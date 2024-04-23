@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account Page</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+<nav class="navbar">
+  <div class="navbar-container">
+    <a href="mainPage.html" class="nav-logo">ClothingReviews</a>
+    <div class="nav-links">
+      <a href="mainPage.html" class="nav-item">Home</a>
+      <a href="account.html" class="nav-item">Account</a>
+      <a href="login.html" class="nav-item">Login</a>
+    </div>
+  </div>
+</nav>
+
+
+<div class="account-container">
+  <!-- Profile Section -->
+  <div class="profile-header">
+    <img src="images/user_profile.jpg" alt="User Profile" class="profile-picture">
+    <h1 class="username">Sample User</h1>
+    <div class="profile-actions">
+      <button class="followers-btn">Followers</button>
+      <button class="following-btn">Following</button>
+      <button class="settings-btn">⚙️</button> <!-- Settings icon -->
+    </div>
+  </div>
+  <!-- User Posts Section -->
+  <div class="user-posts">
+    <h2>Your Posts</h2>
+    <div class="grid">
+      <!-- Repeat this block for each post -->
+      <div class="post-card">
+        <img src="images/sample_post.jpg" alt="Post Description" class="post-image">
+        <div class="post-info">
+          <h3>Post Title</h3>
+          <p class="post-meta">Additional Info</p>
+        </div>
+      </div>
+      <!-- ... -->
+
+      <div class="post-card">
+        <img src="images/sample_post.jpg"  alt="Post Description" class="post-image">
+        <div class="post-info">
+          <h3>Post Title</h3>
+          <p class="post-meta">Additional Info</p>
+        </div>
+      </div>
+
+      <div class="post-card">
+        <img src="images/sample_post.jpg"  alt="Post Description" class="post-image">
+        <div class="post-info">
+          <h3>Post Title</h3>
+          <p class="post-meta">Additional Info</p>
+        </div>
+      </div>
+
+      <div class="post-card">
+        <img src="images/sample_post.jpg"  alt="Post Description" class="post-image">
+        <div class="post-info">
+          <h3>Post Title</h3>
+          <p class="post-meta">Additional Info</p>
+        </div>
+      </div>
+
+
+
+      
+    </div>
+  </div>
+
+</div>
+<script type="text/javascript" src="js/vanilla-tilt.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".post-card"), {
+        max: 5,
+        speed: 400,
+        glare: true,
+        "max-glare":0.3,
+      });
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,429 @@
+html {
+  height:100%;
+  
+}
+  
+/* html {
+  scroll-behavior: smooth;
+  line-height: 1.5;
+  margin: inherit;
+} */
+
+/* Base styles */
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+  
+/* body {
+font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+margin: 0;
+padding: 0;
+padding-top: 200px;
+background-image: linear-gradient(to right top, #dd1888, #ae2e84, #803477, 
+  #593361, #392c46, #362d49, #332d4b, #2f2e4e, 
+  #383c76, #3a4ba1, #345bcf, #146cff);
+
+} */
+body {
+  margin: 0;
+  padding: 0;
+  padding-top: 200px; /* Consider moving this padding to a different element, as it might cause unwanted behavior */
+  height: 100%; /* This makes sure the body at least takes up the full height of the html element */
+  background-image: linear-gradient(to right top, #e967b1, #b6659b, #7d617a, #635366, #444049, #4b4850, #64598c, #636183, #8185b1, #7a84b9, #7b90ce, #6fa1f6);
+  background-attachment: fixed; /* This makes the background fixed relative to the viewport */
+}
+
+body::after {
+  content: "";
+  display: block;
+  height: calc(100vh - 200px); /* Adjust this value to account for any fixed headers or footers */
+}
+
+
+
+
+/* Navigation Bar Styling */
+.navbar {
+  background-color: #fff; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 60px;
+  z-index: 1000;
+  border-radius: 10px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  max-width: 2000px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.nav-logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333; 
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-item {
+  margin-left: 20px;
+  font-size: 1em;
+  color: #333;
+  text-decoration: none;
+  padding: 20px 25px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-item:hover {
+  background-color: #f2f2f2; 
+}
+
+div.skip a {
+  position: absolute;
+  font-family: 'Black Ops One';
+  top: -40px;
+  margin-left: 10px;
+}
+
+div.skip a:hover, div.skip a:focus {
+  color: darkviolet;
+  text-decoration: underline;
+  top: 10px;
+}
+
+  
+
+/*login page*/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login-modal {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 300px;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333333;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group label {
+    display: block;
+    color: #333333;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+  }
+  
+  .form-footer {
+    text-align: right;
+    margin-top: 20px;
+  }
+  
+  .forgot-password {
+    float: left;
+    color: #0066cc;
+    text-decoration: none;
+    font-size: 0.9em;
+  }
+  
+  .btn {
+    background-color: #ff5a5f;
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #e53238;
+  }
+  
+  .social-login {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .btn-social-login {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    font-size: 0.9em;
+    cursor: pointer;
+  }
+  
+  .btn-facebook {
+    background-color: #3b5998;
+  }
+  
+  .btn-facebook:hover {
+    background-color: #334d84;
+  }
+  
+  .btn-google {
+    background-color: #cfbe04;
+  }
+  
+  .btn-google:hover {
+    background-color: #d1d725;
+  }
+  
+  .divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #ccc;
+    margin: 0 10px;
+  }
+  
+  .or {
+    color: #888;
+    font-size: 0.9em;
+  }
+
+
+  
+  .input-group input {
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #dddddd; 
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+/*account page */
+
+.account-container {
+    
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    min-height: 100vh;
+    margin-top: 280px;
+  }
+
+  .profile-header {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 800px;
+    margin-top: 100px;
+  }
+
+  .profile-picture {
+    
+    width: 100px; 
+    height: 80px; 
+    border-radius: 50%; 
+    border: 2px solid #ddd; 
+    margin-bottom: 10px;
+  }
+  
+
+  
+
+  
+  .username {
+    margin: 10px 0;
+  }
+  
+  .profile-actions button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    background: #f0f0f0;
+    cursor: pointer;
+  }
+  
+  .followers-btn, .following-btn {
+    background: #ebebeb; 
+  }
+  
+  .settings-btn {
+    font-size: 1.5em; 
+    background: none; 
+  }
+
+/* User Posts Section */
+
+.user-posts {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 340px); 
+    max-width: 800px; 
+  }
+
+
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; 
+  }
+
+  .post-card {
+    width: calc(50% - 10px); 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px; 
+  }
+  
+  .post-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .post-info {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .post-info h3 {
+    margin: 10px 0;
+  }
+  
+  .post-meta {
+    color: #666;
+    font-size: 0.9em;
+  }
+  
+  .post-price {
+    color: #333;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+
+/* mainPage */
+
+/* Search Box Styling */
+.search-header {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    top:0px;
+    right: 0px;
+    height: 60px;
+    border-radius: 10px;
+  }
+  
+  .search-box {
+    width: 50%;
+    padding: 10px;
+    margin-right: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .search-btn,
+  .filter-btn {
+    padding: 10px;
+    border: none;
+    background-color: #ff385c;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  /* Grid Layout */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    padding-top: 100px;
+    margin-top: 540px;
+  }
+  
+  .post {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .post-image {
+    width: 100%;
+    height: auto; 
+    object-fit: cover; 
+  }
+  
+  .post-info {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+ 
+  .username {
+    margin: 0 10px;
+  }
+  
+  .likes {
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive adjustments */
+  /* @media (max-width: 768px) {
+    .grid {
+      justify-content: center;
+    }
+  
+    .post-card {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .post-card {
+      width: 100%; 
+    }
+  } */
+  
+
+
