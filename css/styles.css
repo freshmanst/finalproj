@@ -380,7 +380,7 @@ body {
     gap: 20px;
     padding: 20px;
     padding-top: 500px;
-    margin-top: 300px;
+    margin-top: 350px;
   }
   
   .post {
@@ -431,6 +431,37 @@ body {
   .tag-button:hover {
     background-color: #0056b3; /* Change to your desired hover color */
   }
+
+
+  .skip-link {
+    position: absolute;
+    left: -999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: -999;
+}
+
+.skip-link:focus, 
+.skip-link:active {
+    left: 0;
+    top: 0;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    z-index: 9999;
+    padding: 10px;
+    background: #f1f1f1;
+    border: 1px solid #ccc;
+    text-decoration: none;
+}
+
+
+/* main {
+  padding-top: 1000px;
+  margin-top: 1000px;
+} */
 
   
   /* Responsive adjustments */
