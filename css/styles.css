@@ -44,7 +44,7 @@ body::after {
 
 /* Navigation Bar Styling */
 .navbar {
-  background-color: #fff; 
+  background-color: #c3b0da; 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
@@ -240,10 +240,11 @@ body {
     padding: 20px;
     min-height: 100vh;
     margin-top: 280px;
+    
   }
 
   .profile-header {
-    background: #ffffff;
+    background: #c7b8dd;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -320,6 +321,7 @@ body {
   .post-info {
     padding: 15px;
     text-align: center;
+    background-color: #d3d7de;
   }
   
   .post-info h3 {
@@ -341,7 +343,7 @@ body {
 
 /* Search Box Styling */
 .search-header {
-    background-color: white;
+    background-color: rgb(182, 178, 210);
     padding: 10px;
     text-align: center;
     position: fixed;

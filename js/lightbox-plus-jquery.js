@@ -11,6 +11,13 @@
  *
  * Date: 2019-05-01T21:04Z
  */
+
+
+/*
+From https://vivianle05.github.io/339finalproject/vivian.html
+
+*/
+
 ( function( global, factory ) {
 
 	"use strict";

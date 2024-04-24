@@ -1,3 +1,8 @@
+/*
+From https://vivianle05.github.io/339finalproject/vivian.html
+
+*/
+
 var VanillaTilt = (function () {
     'use strict';
     
