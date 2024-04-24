@@ -87,6 +87,7 @@ body::after {
 
 .nav-item:hover {
   background-color: #f2f2f2; 
+  font-weight: bold;
 }
 
 div.skip a {
@@ -238,8 +239,9 @@ body {
     flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
+    padding-top: 200px;
     min-height: 100vh;
-    margin-top: 280px;
+    margin-top: 200px;
     
   }
 
@@ -274,7 +276,7 @@ body {
     margin-right: 10px;
     border: none;
     border-radius: 4px;
-    background: #f0f0f0;
+    background: #7472e0;
     cursor: pointer;
   }
   
@@ -365,7 +367,7 @@ body {
   .filter-btn {
     padding: 10px;
     border: none;
-    background-color: #ff385c;
+    background-color: #8e56a7;
     color: white;
     cursor: pointer;
     border-radius: 5px;
@@ -377,8 +379,8 @@ body {
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding: 20px;
-    padding-top: 100px;
-    margin-top: 540px;
+    padding-top: 500px;
+    margin-top: 300px;
   }
   
   .post {
@@ -386,6 +388,7 @@ body {
     border: 1px solid #ccc;
     border-radius: 10px;
     overflow: hidden;
+    /* height: 550px; */
   }
   
   .post-image {
@@ -409,6 +412,26 @@ body {
   .likes {
     font-size: 0.9rem;
   }
+
+  .tag-container {
+    margin-top: 10px;
+  }
+  
+  .tag-button {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #c3abd5; /* Change to your desired button color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 5px;
+    width: 80px;
+  }
+  
+  .tag-button:hover {
+    background-color: #0056b3; /* Change to your desired hover color */
+  }
+
   
   /* Responsive adjustments */
   /* @media (max-width: 768px) {
